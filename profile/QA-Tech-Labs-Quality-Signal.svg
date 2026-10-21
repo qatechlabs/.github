@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-labelledby="title desc">
+  <title id="title">QA Tech Labs — Engineering Quality. Intelligently.</title>
+  <desc id="desc">Premium burgundy and rose gold engineering signal illustration with subtle animated light tracing a circuit path.</desc>
+  <defs>
+    <linearGradient id="qtl-background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10070C"/>
+      <stop offset="52%" stop-color="#190B12"/>
+      <stop offset="100%" stop-color="#381324"/>
+    </linearGradient>
+    <linearGradient id="qtl-frame" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#701A3D"/>
+      <stop offset="50%" stop-color="#C77B9B"/>
+      <stop offset="100%" stop-color="#701A3D"/>
+    </linearGradient>
+    <linearGradient id="qtl-metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C77B9B"/>
+      <stop offset="50%" stop-color="#F8F0F3"/>
+      <stop offset="100%" stop-color="#E5B5C7"/>
+    </linearGradient>
+    <radialGradient id="qtl-aura" cx="75%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#701A3D" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="qtl-grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#C77B9B" stroke-width="0.6" stroke-opacity="0.12"/>
+    </pattern>
+    <filter id="qtl-glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="qtl-clip">
+      <rect x="2" y="2" width="1196" height="236" rx="17"/>
+    </clipPath>
+  </defs>
+
+  <!-- Static foundation: remains fully legible if animation is unsupported. -->
+  <rect x="1" y="1" width="1198" height="238" rx="18" fill="url(#qtl-background)" stroke="url(#qtl-frame)" stroke-width="2"/>
+  <g clip-path="url(#qtl-clip)">
+    <rect x="2" y="2" width="1196" height="236" fill="url(#qtl-grid)"/>
+    <rect x="2" y="2" width="1196" height="236" fill="url(#qtl-aura)"/>
+    <path d="M0 210 C180 150, 270 250, 440 192 S760 165, 955 208 S1100 218, 1210 188" fill="none" stroke="#701A3D" stroke-width="1.5" opacity="0.45"/>
+    <path d="M0 25 L600 25 M0 215 L565 215" fill="none" stroke="#C77B9B" stroke-width="1" opacity="0.28"/>
+
+    <!-- Editorial label and brand headline -->
+    <rect x="58" y="36" width="7" height="7" rx="1.5" fill="#E5B5C7"/>
+    <text x="78" y="44" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3" fill="#C77B9B">QA TECH LABS  /  QUALITY SIGNAL</text>
+    <text x="56" y="105" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="700" letter-spacing="0.4" fill="#F8F0F3">ENGINEERING QUALITY.</text>
+    <text x="56" y="149" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="700" letter-spacing="0.7" fill="url(#qtl-metal)">INTELLIGENTLY.</text>
+    <path d="M58 166 H448" stroke="#C77B9B" stroke-width="1.4" opacity="0.75"/>
+    <path d="M58 166 H150" stroke="#F8F0F3" stroke-width="2.4" stroke-linecap="round" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <text x="58" y="196" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2.3" fill="#E5B5C7">TEST AUTOMATION  ·  AI ENGINEERING  ·  OPEN SOURCE</text>
+
+    <!-- Signal path, engineered nodes and circular QA-inspired target -->
+    <path d="M615 124 H714 L740 93 H841 L867 124 H1040" fill="none" stroke="#701A3D" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" opacity="0.22"/>
+    <path id="qtl-signal" d="M615 124 H714 L740 93 H841 L867 124 H1040" fill="none" stroke="#C77B9B" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.8"/>
+    <path d="M615 124 H714 L740 93 H841 L867 124 H1040" fill="none" stroke="#F8F0F3" stroke-width="2.7" stroke-linecap="round" stroke-dasharray="2 38" opacity="0.58">
+      <animate attributeName="stroke-dashoffset" from="0" to="-80" dur="5.5s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="714" cy="124" r="5" fill="#190B12" stroke="#C77B9B" stroke-width="2"/>
+    <circle cx="740" cy="93" r="5" fill="#190B12" stroke="#E5B5C7" stroke-width="2"/>
+    <circle cx="841" cy="93" r="5" fill="#190B12" stroke="#C77B9B" stroke-width="2"/>
+    <circle cx="867" cy="124" r="5" fill="#190B12" stroke="#E5B5C7" stroke-width="2"/>
+    <g filter="url(#qtl-glow)">
+      <circle r="4.7" fill="#F8F0F3">
+        <animateMotion dur="7s" repeatCount="indefinite" path="M615 124 H714 L740 93 H841 L867 124 H1040"/>
+      </circle>
+    </g>
+    <g transform="translate(1032 124)">
+      <circle r="71" fill="#190B12" fill-opacity="0.55" stroke="#C77B9B" stroke-opacity="0.3"/>
+      <circle r="56" fill="none" stroke="#C77B9B" stroke-width="1.5" stroke-dasharray="5 13" opacity="0.58">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="50s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="39" fill="#451126" fill-opacity="0.6" stroke="#E5B5C7" stroke-width="1.5"/>
+      <path d="M-15 0 L-4 11 L18 -14" fill="none" stroke="#F8F0F3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle r="48" fill="none" stroke="#C77B9B" stroke-width="1" opacity="0.3">
+        <animate attributeName="r" values="45;51;45" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.2;0.6;0.2" dur="6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <text x="756" y="170" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2.8" fill="#E5B5C7" opacity="0.9">DESIGN  ·  VERIFY  ·  DELIVER</text>
+    <circle cx="1140" cy="39" r="3" fill="#C77B9B" opacity="0.8"/>
+    <circle cx="1163" cy="39" r="3" fill="#C77B9B" opacity="0.4"/>
+    <circle cx="1186" cy="39" r="3" fill="#C77B9B" opacity="0.2"/>
+    <path d="M1182 180 v32 h-58" fill="none" stroke="#C77B9B" stroke-width="1.5" opacity="0.5"/>
+  </g>
+</svg>
